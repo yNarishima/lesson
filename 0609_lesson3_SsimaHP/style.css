@@ -1,0 +1,443 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Noto Sans JP", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+.header-logo-and-nav {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 20px;
+  left: 80px;
+  z-index: 100;
+  width: 90%;
+}
+
+.header-nav {
+  width: 55%;
+  padding-top: 20px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-top {
+  color: white;
+  font-size: 22px; 
+  text-decoration: none; 
+  border-bottom: solid 1px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 50px; 
+}
+
+.header-nav-item,
+.header-nav-contact {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.header-nav-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 1px;
+}
+
+.header-nav-contact {
+  border: solid 1px;
+  padding: 20px;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.header-nav-contact:hover {
+  background-color: darkblue;
+  border: darkblue;
+}
+
+.main-visual {
+  z-index: 90;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* 本文 */
+/* ★中央揃えの左寄せ */
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-text p {
+  font-size: 20px;
+  color: #333333;
+  line-height: 40px;
+}
+
+.main-text h2 {
+  font-size: 60px;
+  color: #333333;
+  line-height: 50px;
+}
+
+.main-text span {
+  font-size: 20px;
+}
+
+/* 本文GREETING */
+
+.greeting-section {
+  display: flex;
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+.greeting-section-h2 {
+  width: 50%;
+}
+
+.greeting-section-text {
+  width: 50%;
+}
+
+/* 本文SERVICE */
+
+.service-section {
+  display: flex;
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+.service-section-h2 {
+  margin-bottom: 0;
+}
+
+.service-section-text {
+  width: 50%;
+}
+
+.service-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-morelink {
+  text-align: end;
+  padding-right: 10%;
+}
+
+.service-morelink img {
+  vertical-align: -15px;
+}
+
+.service-morelink img:hover {
+  transform: translateX(5px)
+}
+
+
+.service-section-image {
+  width: 50%;
+}
+
+.service-section-image img {
+  width: 90%;
+  height: 450px;
+  object-fit: cover;
+}
+
+
+/* service-sub section */
+.service-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.service-sub-item p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.service-sub-item {
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  line-height: 50px;
+}
+
+.service-sub-item p::after {
+  position: absolute;
+  content: "";
+  background-color: #333333;
+  width: 150px;
+  height: 3px;
+  bottom: -25px;
+  left: 25%;
+}
+
+
+.service-sub-link  {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service-sub-link img {
+  vertical-align: -15px;
+}
+
+.service-sub-link img:hover {
+  transform: translateX(5px)
+}
+
+.service-sub-morelink {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+
+/* COMPANY RECRUIT画像 */
+.img-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+
+.img-section img {
+  width: 106%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.img-section a:hover {
+  img {
+    filter: brightness(100%);
+  }
+}
+
+.img-section-h2 {
+  color:white;
+  font-size: 60px;
+  line-height: 50px;
+  padding-left: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+
+.img-section-span {
+  font-size: 20px;
+}
+
+
+.img-section-company {
+  display: flex;
+  position: relative;
+  width: 50%;
+  padding-right: 0px;
+}
+
+.img-section-recruit {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+
+
+/* INFORMATION section */
+
+.information-section-h2 {
+  font-size: 60px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.information-section-table {
+  font-size: 20px;
+  color: #333333;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.information-section-table td {
+  border-bottom: 1px solid #e8eaec;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: start;
+}
+
+.information-section-table th {
+  border-bottom: 1px solid #e8eaec;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.line {
+  color: #333333;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.oshirase {
+  border: #00358A 1px solid;
+  background-color: #00358A;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.information-section-table a {
+  text-decoration: none;
+  color: #75787b;
+  text-align: left;
+}
+
+.information-section-table a:hover {
+  color: rgb(28, 93, 136);
+} 
+
+.information-section-more {
+  position: relative;
+  left: 20%;
+}
+
+
+.information-section-more span {
+  padding-right: 20px;
+}
+
+.information-section-more a {
+  text-decoration: none;
+  border: 1px solid #0c214f;
+  background-color: #0c214f;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 8%;
+}
+
+.information-section-more a:hover {
+  background-color: #284C9C;
+  border-color: #284C9C;
+  color: #3275A6;
+} 
+
+/* お問い合わせはこちらからセクション */
+
+.contact-section {
+  width: 100%;
+  height: 350px;
+  background-color: #E5E5E3;
+}
+
+.contact-section p {
+  color: #333333;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.contact-section-link {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section-link a {
+  color: #333333;
+  text-decoration: none;
+  border: solid  white;
+  background-color: white;
+  padding: 20px 200px;
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.contact-section-link i {
+  padding-right: 10px;
+}
+
+.contact-section-link a:hover {
+  border-color: darkblue;
+  background-color: darkblue;
+  color: white;
+}
+
+/* フッター　リンク */
+/* ★footer下の余白 */
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color:#717c86;
+  font-size: 20px;
+  padding-left: 90px;
+  white-space: nowrap;
+}
+
+.footer-nav a::before {
+  content: "♦";
+  font-size: 0.6em;
+  padding-right: 10px;
+}
+
+.footer-nav-link {
+  display: flex;
+  justify-content: center;
+}
+
+/* フッター　copyright */
+.copyright-section {
+  color: white;
+  background-color: #00358A;
+  padding-top: 1px;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-align: center;
+}
