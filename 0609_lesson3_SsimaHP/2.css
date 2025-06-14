@@ -1,0 +1,515 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", "Noto Sans JP", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+footer {
+  margin: 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: relative;
+}
+
+.header-logo {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.header-logo img {
+  height: 95px;
+}
+
+.header-logo img:hover {
+  filter: opacity(50%);
+}
+
+      /* position:absoluteするとき、width100%にしないと左寄せになった */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+}
+
+/* header navigation */
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 55%;
+  margin-top: 40px;
+  height: 50px;
+}
+
+.header-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  white-space: nowrap;
+}
+
+.header-nav-item {
+  text-underline-offset: 20px;
+}
+
+.header-nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: white;
+}
+
+.header-nav-contact {
+  border: white solid 1px;
+  border-width: 1;
+  padding: 12px 50px;
+  border-radius: 50px;
+}
+
+.header-nav-contact:hover {
+  border: #00358A solid 1px;
+  background-color: #00358A;
+}
+
+.header-nav-top a{
+  position: relative;
+}
+
+
+.header-nav-top a::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 45px;
+  left: -8px;
+}
+
+/* header main visual */
+
+.header-mainvisual img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+
+/* 本文 */
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-text p {
+  font-size: 20px;
+  color: #333333;
+  line-height: 40px;
+}
+
+.main-text h2 {
+  font-size: 60px;
+  color: #333333;
+  line-height: 50px;
+}
+
+.main-text span {
+  font-size: 20px;
+}
+
+/* main text section ２つのボックスの中身を揃える→display: blockで試行錯誤 */
+
+.main-text {
+  display: block;  
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 100px;
+}
+
+/* 本文GREETING */
+
+.greeting-section {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.greeting-section-h2,
+.greeting-section-text {
+  width: 50%;
+
+}
+
+/* 本文SERVICE */
+.service-section {
+  display: flex;
+}
+
+.service-section-text,
+.service-section-image {
+  width: 50%;
+}
+
+.service-section-text p{
+  margin-top: -40px;
+}
+
+.service-section-image img {
+  margin-top: 30px;
+  object-fit: cover;
+  height: 450px;
+  width: 95%;
+}
+
+/* main text section詳細はこちらボタン */
+
+.more-link {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;  
+  margin-right: 70px;
+}
+
+.more-link a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.more-link img {
+  vertical-align: -15px;
+  padding-left: 10px;
+}
+
+.more-link img:hover {
+  transform: translateX(5px);
+}
+
+/* business description */
+.business-description-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+     /* display:blockでタイトル、下線、サブタイトルを整列 */
+.business-description-section div {
+  display: block;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.bus-des-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.bus-sub {
+  font-size: 20px;
+  color: #333333;
+  position: relative;
+  line-height: 80px;
+  text-align: center;
+}
+
+.bus-sub::before {
+  content: "";
+  background-color: #333333;
+  width: 130px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* business description section 矢印ボタン */
+.bus-des-arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.bus-des-arrow a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bus-des-arrow img {
+  vertical-align: -15px;
+  padding-left: 10px;
+}
+
+.bus-des-arrow img:hover {
+  transform: translateX(5px);
+}
+
+/* company recruit section 下線*/
+.company-recruit-section {
+  display: flex;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.company-recruit-section h2 {
+  font-size: 60px;
+  line-height: 50px;
+  color: white;
+  padding-left: 40px;
+}
+
+.company-recruit-section span {
+  font-size: 20px;
+}
+
+.company-section {
+  position: relative;
+  width: 50%;
+}
+
+.company-section h2 {
+  position: absolute;
+  z-index: 100;
+}
+
+.company-section img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.company-section img:hover {
+  filter: brightness(100%);
+}
+
+.recruit-section {
+  position: relative;
+  width: 50%;
+}
+
+.recruit-section h2 {
+  position: absolute;
+  z-index: 100;
+}
+
+.recruit-section img {
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+.recruit-section img:hover {
+  filter: brightness(100%);
+}
+
+/* information section ボタンも表に入れた、th右線はspan |*/
+.information-section h2 {
+  font-size: 60px;
+  color: #333333;
+  text-align: center;  
+}
+
+.information-section table {
+  margin: auto;
+
+}
+
+.date {
+  font-size: 18px;
+  color: #4e4d4d;
+  line-height: 70px;
+  color: #858383;
+  border-bottom: #e6e4e4 solid 1px;
+  white-space: nowrap;
+} 
+
+.oshirase {
+  background-color: #00358A;
+  border: #00358A 1px solid;
+  padding: 3px 10px;
+  border-radius: 10%;
+  margin-right: 10px;
+  margin-left: 20px;
+  color: white;
+}
+
+.line {
+  margin-left: 10px;
+}
+
+.news {
+  font-size: 20px;
+  line-height: 30px;
+  width: 1200px;
+  border-bottom: #e6e4e4 solid 1px;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+.news a {
+  text-decoration: none;
+  color: #858383;
+}
+
+.news a:hover {
+  color: #597CB3;
+}
+
+.information-morelink {
+  border: #001441 solid 1px;
+  background-color: #001441;
+  color: white;
+  padding: 15px 0 15px 30px;
+  margin-right: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.information-morelink:hover {
+  background-color: #284C9C;
+  border: #284C9C solid 1px;
+}
+
+.information-morelink:hover {
+  color: #3177AA;
+}
+
+/* ★hoverのとき矢印と文字が一緒に色が変わらない */
+.information-morelink::after {
+  content: ">";
+  padding-left: 20px;
+}
+
+.information-morelink-link {
+  text-decoration: none;
+}
+
+/* contact section */
+.contact-section {
+  background-color: #E5E5E3;
+  height: 300px;
+}
+
+.contact-section p {
+  color: #333333;  
+  font-size: 38px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 55px;
+}
+
+.contact-section-button {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.contact-section-button a {
+  text-decoration: none;
+  color: #333333; 
+  font-size: 24px;
+  font-weight: bold;  
+  background-color: white;
+  width: 700px;
+  text-align: center;
+  padding: 18px 230px;
+}
+
+.contact-section-button a:hover {
+  color: white;
+  background-color: #00358A;
+}
+
+/* footer nav */
+.footer-nav a {
+  text-decoration: none;
+  color: #4D4D4D;
+  padding-right: 80px;
+  font-size: 20px;
+}
+
+/* ♦の下線をなくしたい */
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: #333333;
+  padding-right: 80px;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav a::before {
+  content: "♦";
+  font-size: 0.4em;
+  padding-right: 10px;
+  color: #858383;
+  vertical-align: 6px;
+}
+
+.footer-nav li {
+  list-style: none;
+}
+
+/* footer copyright */
+.footer-copyright {
+  background-color: #00358A;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* pagetop botton */
+
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #00358A;
+    border: solid 2px #00358A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    filter: opacity(90%);
+}
+
+.pagetop:hover {
+  filter: opacity(110%);
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: translateY(20%) rotate(-45deg);
+}
